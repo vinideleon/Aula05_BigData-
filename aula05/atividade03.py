@@ -5,12 +5,15 @@
 compra = float(input('qual é o valor da sua compra? '))
 programa_de_fidelidade = (input('você é cadastrado no programa de fidelidade? [S/N] ')).lower()[0]
 
+#CONSTANTE ela não varia
+FRETE = 25
+
+
 if compra > 200 or programa_de_fidelidade == ('s'):
     frete = 0
     print(f'valor da sua compra é {compra}')
 
 else:
-    frete = 25
     valor_final = compra + frete
-    print(f'o frete fica no valor de 25, o valor total da sua compra é {valor_final} ')
+    print(f'o frete fica no valor {frete}, o valor total da sua compra é {valor_final} ')
 
